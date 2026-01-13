@@ -223,7 +223,7 @@ export function HomeHero({ sx, ...other }: BoxProps) {
           <m.div {...motionProps} key={service.label}>
             <Stack alignItems="center" spacing={0.75}>
               <Iconify
-                icon={service.icon}
+                icon={service.icon as any}
                 sx={{
                   width: 28,
                   height: 28,
