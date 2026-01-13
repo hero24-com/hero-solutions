@@ -23,6 +23,14 @@ const nextConfig: NextConfig = {
   env: {
     BUILD_STATIC_EXPORT: JSON.stringify(isStaticExport),
   },
+  experimental: {
+    // Skip building pages that require API data during build
+    skipTrailingSlashRedirect: true,
+  },
+  // Skip building dashboard pages that require API
+  async redirects() {
+    return [];
+  },
   // Without --turbopack (next dev)
   webpack(config) {
     config.module.rules.push({

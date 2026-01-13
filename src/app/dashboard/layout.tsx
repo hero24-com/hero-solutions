@@ -5,6 +5,11 @@ import { AuthGuard } from 'src/auth/guard';
 
 // ----------------------------------------------------------------------
 
+export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
+
+// ----------------------------------------------------------------------
+
 type Props = {
   children: React.ReactNode;
 };
