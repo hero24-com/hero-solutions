@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hero Solutions — Invoice without a company</title>
+  <meta name="description" content="Hero Solutions lets you invoice customers without your own Business ID. We bill the customer, handle VAT and taxes, and pay your earnings to your account. The company behind Hero24.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f5f6f8;
+      --border: #e4e6eb;
+      --text: #0f172a;
+      --muted: #5b6475;
+      --accent: #1d4ed8;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body { background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 28px 0; }
+    .logo { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; }
+    .logo span { color: var(--accent); }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 28px; font-size: 15px; }
+    nav a:hover { color: var(--text); }
+    .hero { padding: 120px 0 100px; }
+    .eyebrow { color: var(--accent); font-size: 14px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+    h1 { font-size: clamp(40px, 7vw, 72px); line-height: 1.05; letter-spacing: -0.04em; font-weight: 700; margin: 20px 0 24px; max-width: 15ch; }
+    .lead { color: var(--muted); font-size: 20px; max-width: 58ch; }
+    .btn { display: inline-block; margin-top: 40px; background: var(--text); color: #fff; font-weight: 600; padding: 14px 24px; border-radius: 999px; text-decoration: none; }
+    .btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--border); margin-left: 8px; }
+    .btn:hover { opacity: 0.9; }
+    section { padding: 88px 0; border-top: 1px solid var(--border); }
+    h2 { font-size: clamp(28px, 4vw, 40px); letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 48px; max-width: 22ch; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .card { background: var(--surface); border-radius: 16px; padding: 28px; }
+    .card h3 { font-size: 18px; margin-bottom: 8px; letter-spacing: -0.01em; }
+    .card p { color: var(--muted); font-size: 15px; }
+    .num { color: var(--accent); font-size: 14px; font-weight: 600; display: block; margin-bottom: 16px; }
+    dl { display: grid; grid-template-columns: 200px 1fr; gap: 16px 32px; max-width: 720px; }
+    dt { color: var(--muted); }
+    dd { font-weight: 500; }
+    footer { border-top: 1px solid var(--border); padding: 32px 0; color: var(--muted); font-size: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    @media (max-width: 600px) {
+      nav a:not(:last-child) { display: none; }
+      .hero { padding: 72px 0 64px; }
+      section { padding: 64px 0; }
+      dl { grid-template-columns: 1fr; gap: 4px; }
+      dd { margin-bottom: 16px; }
+      .btn.ghost { margin-left: 0; margin-top: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="#">hero<span>solutions</span></a>
+      <nav>
+        <a href="#how">How it works</a>
+        <a href="#hero24">Hero24</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <p class="eyebrow">Light entrepreneurship</p>
+        <h1>Do the work. We'll handle the invoicing.</h1>
+        <p class="lead">Invoice your customers without starting a company or getting a Business ID. We bill the customer, take care of VAT and taxes, and pay your earnings straight to your bank account. One flat fee: 6%.</p>
+        <a class="btn" href="mailto:herosolutions.oy@gmail.com?subject=Hero%20Solutions%20invoicing">Get started</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+
+      <section id="how">
+        <h2>Three steps to getting paid.</h2>
+        <div class="grid">
+          <div class="card"><span class="num">01</span><h3>Do the job</h3><p>Agree on the work and the price with your customer, or take a job booked through Hero24.</p></div>
+          <div class="card"><span class="num">02</span><h3>We invoice</h3><p>Tell us what you did. We send the invoice in our name and follow up on payment.</p></div>
+          <div class="card"><span class="num">03</span><h3>You get paid</h3><p>Once the customer pays, we deduct taxes and our 6% fee and pay the rest to your account.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>What we take care of.</h2>
+        <div class="grid">
+          <div class="card"><h3>Invoicing</h3><p>Professional invoices to private and business customers, with payment follow-up.</p></div>
+          <div class="card"><h3>VAT &amp; taxes</h3><p>We handle VAT and withhold tax according to your tax card, so the paperwork is done.</p></div>
+          <div class="card"><h3>Payslips</h3><p>Every payout comes with a clear statement of what was billed, deducted and paid.</p></div>
+        </div>
+      </section>
+
+      <section id="hero24">
+        <h2>The company behind Hero24.</h2>
+        <p class="lead">Hero Solutions operates the Hero24 service and is the data controller for the personal data processed on it. You can ask to see, correct, export or delete your data at any time. We respond within one month, as the GDPR requires.</p>
+        <a class="btn" href="https://www.hero24.com">Visit Hero24</a>
+        <a class="btn ghost" href="mailto:herosolutions.oy@gmail.com">herosolutions.oy@gmail.com</a>
+      </section>
+
+      <section id="contact">
+        <h2>Company details.</h2>
+        <dl>
+          <dt>Company</dt><dd>Hero Solutions Oy</dd>
+          <dt>Business ID</dt><dd>3579397-9</dd>
+          <dt>Address</dt><dd>Sturenkatu 26 lt. 36, 00510 Helsinki, Finland</dd>
+          <dt>Email</dt><dd><a href="mailto:herosolutions.oy@gmail.com">herosolutions.oy@gmail.com</a></dd>
+          <dt>Phone</dt><dd><a href="tel:+358504132867">+358 50 413 2867</a></dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="y">2026</span> Hero Solutions Oy · Business ID 3579397-9</span>
+      <a href="https://www.hero24.com">hero24.com</a>
+    </footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
